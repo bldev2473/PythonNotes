@@ -131,8 +131,8 @@ class 클래스명:
 ```
 class 클래스명:
   @staticmethod
-    def 메서드명(매개변수명1, 매개변수명2):
-      pass
+  def 메서드명(매개변수명1, 매개변수명2):
+    pass
 ```
 
 #### 클래스 속성 정의
@@ -152,6 +152,6 @@ class 클래스명:
 #### 인스턴스 속성 접근 제어
 ```
 class 클래스명:
-  def __init__(self, 매개변수명)
+  def __init__(self)
     self.__속성명 = 값
 ```
