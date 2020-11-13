@@ -123,7 +123,7 @@ class 클래스명:
 ```
 class 클래스명:
   @classmethod
-  def 메서드명(cls, 매개변수명2, 매개변수명2):
+  def 메서드명(cls, 매개변수명1, 매개변수명2):
     pass
 ```
 
