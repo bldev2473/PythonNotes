@@ -56,3 +56,102 @@ def 함수명(매개변수명, *args, **kwargs):
 def 함수명(매개변수명=초기값):
   pass
 ```
+
+## 클래스
+#### 클래스 정의
+```
+class 클래스명:
+  pass
+```
+
+#### 인스턴스 메서드 정의
+```
+class 클래스명:
+  def 메서드명(self):
+    pass
+```
+
+#### 인스턴스 속성 정의
+```
+class 클래스명:
+  def __init__(self):
+    self.속성명1 = 값1
+    self.속성명2 = 값2
+```
+
+```
+class 클래스명:
+  def __init__(self, 매개변수명1, 매개변수명2):
+    self.속성명1 = 매개변수명1
+    self.속성명2 = 매개변수명2
+```
+
+```
+class 클래스명:
+  def __init__(self, *args):
+    self.속성명1 = args[0]
+    self.속성명2 = args[1]
+    self.속성명3 = args[2]
+```
+
+```
+class 클래스명:
+  def __init__(self, **kwargs):
+    self.속성명1 = kwargs[‘키명1’]
+    self.속성명2 = kwargs[‘키명2’]
+    self.속성명3 = kwargs[‘키명3’]
+```
+
+```
+class 클래스명:
+  def __init__(self, *args, **kwargs):
+    self.속성명1 = args[0]
+    self.속성명2 = args[1]
+    self.속성명3 = args[2]
+    self.속성명4 = kwargs[‘키명1’]
+    self.속성명5 = kwargs[‘키명2’]
+    self.속성명6 = kwargs[‘키명3’]
+```
+
+#### 인스턴스 속성 제한
+```
+class 클래스명:
+  __slots__ = ['속성명1', '속성명2']
+```
+
+#### 클래스 메서드 정의
+```
+class 클래스명:
+  @classmethod
+  def 메서드명(cls, 매개변수명2, 매개변수명2):
+    pass
+```
+
+#### 정적 메서드 정의
+```
+class 클래스명:
+  @staticmethod
+    def 메서드명(매개변수명1, 매개변수명2):
+      pass
+```
+
+#### 클래스 속성 정의
+```
+class 클래스명:
+  속성명1 = 값1
+  속성명2 = 값2
+```
+
+#### 인스턴스 메서드 접근 제어
+```
+class 클래스명:
+  def __메서드명(self):
+    pass
+```
+
+#### 인스턴스 속성 접근 제어
+```
+class 클래스명:
+  def __init__(self, 매개변수명)
+    self.__속성명 = 값
+```
