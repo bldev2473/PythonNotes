@@ -156,7 +156,7 @@ class 클래스명:
     self.__속성명 = 값
 ```
 
-### 클래스 상속
+#### 클래스 상속
 ```
 def 상위클래스명:
   pass
@@ -167,7 +167,7 @@ def 하위클래스명(상위클래스명):
   pass
 ```
 
-### 클래스 다중 상속
+#### 클래스 다중 상속
 ```
 def 상위클래스명1:
   pass
@@ -183,7 +183,7 @@ def 하위클래스명(상위클래스명1, 상위클래스명2):
   pass
 ```
 
-### 다이아몬드 문제 (Diamond Problem)
+#### 다이아몬드 문제 (Diamond Problem)
 ```
 class A:
   def method(self):
@@ -240,4 +240,69 @@ def 외부함수명(매개변수명):
 ```
 변수명1(인자명)
 변수명2(인자명)
+```
+
+## 예외 처리
+#### 예외 처리
+```
+try:
+  pass
+except:
+  예외 발생 시 실행할 코드
+```
+
+```
+try:
+  pass
+except:
+  예외 발생 시 실행할 코드
+else:
+  예외가 발생하지 않을 때 실행할 코드
+```
+
+```
+try:
+  pass
+except:
+  예외 발생 시 실행할 코드
+else:
+  예외가 발생하지 않을 때 실행할 코드
+finally:
+  예외 발생 여부와 관계없이 항상 실행할 코드
+```
+
+#### 특정 예외 처리
+```
+try:
+  pass
+except 예외명:
+  예외 발생 시 실행할 코드
+```
+
+#### 에러 메시지 출력
+```
+try:
+  pass
+except 예외명 as 변수명:
+  예외 발생 시 실행할 코드
+  print(변수명)
+```
+
+#### 예외 발생 시키기
+```
+try:
+  raise 예외명(‘에러메시지’)
+except Exception as e:
+  print(e)
+```
+
+```
+try:
+  try:
+    raise 예외명(‘에러메시지’)
+  except Exception as e:
+    print(e)
+    raise
+except Exception as e:
+  print(e)
 ```
