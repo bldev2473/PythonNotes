@@ -156,6 +156,65 @@ class 클래스명:
     self.__속성명 = 값
 ```
 
+### 클래스 상속
+```
+def 상위클래스명:
+  pass
+```
+
+```
+def 하위클래스명(상위클래스명):
+  pass
+```
+
+### 클래스 다중 상속
+```
+def 상위클래스명1:
+  pass
+```
+
+```
+def 상위클래스명2:
+  pass
+```
+
+```
+def 하위클래스명(상위클래스명1, 상위클래스명2):
+  pass
+```
+
+### 다이아몬드 문제 (Diamond Problem)
+```
+class A:
+  def method(self):
+    pass
+ 
+class B(A):
+  def method(self):
+    pass
+
+class C(A):
+  def method(self):
+    pass
+  
+class D(B, C):
+  pass
+```
+
+```
+D.mro()
+```
+
+#### 추상 클래스
+```
+from abc import ABC, abstractmethod
+ 
+class 추상클래스명(ABC):
+  @abstractmethod
+  def 메서드명(self):
+    pass
+```
+
 ## 클로저
 #### 클로저 정의 (함수 사용)
 ```
@@ -174,8 +233,11 @@ def 외부함수명(매개변수명):
 ```
 
 #### 클로저 사용
+```
 변수명1 = 외부함수명(인자명)
 변수명2 = 외부함수명(인자명)
-
+```
+```
 변수명1(인자명)
 변수명2(인자명)
+```
