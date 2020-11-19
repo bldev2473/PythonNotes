@@ -306,3 +306,30 @@ try:
 except Exception as e:
   print(e)
 ```
+
+## 이터레이터 (Iterator)
+#### iterable, iterator
+- 반복 가능한 객체 (iterable 객체): iterator를 반환할 수 있는 객체
+- 이터레이터 (iterator) 객체: 상태를 가지고 있고 next()를 호출하여 다음 값을 만들어낼 수 있는 객체
+
+#### iterable 객체로 iterator 생성
+```
+iterable객체명.__iter__
+iter(iterable객체명, 반복을끝낼값)
+```
+
+#### iterable 객체의 요소들을 차례대로 꺼내기
+```
+iterator객체명.__next__
+next(iterator객체명, 기본값)
+```
+
+## 제너레이터 (Generator)
+#### 제너레이터 구현
+```
+def 함수명:
+  yield 값1
+  yield 값2
+  yield 값3
+```
+
